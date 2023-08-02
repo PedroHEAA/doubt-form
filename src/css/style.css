@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+html {
+    background: url(../images/bg-repeat.jpg);
+    background-size: contain;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    min-height: 100vh;
+}
+
+main .form-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 50px 90px;
+}
+
+main .form-title h1{
+    font-size: 38px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    align-self: flex-start;
+}
+
+main .form-title p{
+    font-size: 28px;
+    padding: 0px 25px 0px 0px;
+}
+
+main .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 100px 0px 15px;
+}
+
+main .form form{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    height: 750px;
+    width: 100%;
+    padding: 40px 40px;
+    border-radius: 15px;
+}
+
+main .form form div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+main .form form div input:not(.doubt-message, .submit-button){
+    padding: 15px 10px;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+main .form form div p{
+    display: none;
+    color: #d04543;
+    font-size: 15px;
+    margin-left: 8px;
+}
+
+main .form form div .without-error{
+    display: none;
+}
+
+main .form form div .error{
+    display: block;
+    color: #d04543;
+    font-size: 15px;
+    margin-left: 8px;
+}
+
+main .form form .doubt-message{
+    padding: 15px 10px 150px 10px;
+    border-radius: 10px;
+    margin-bottom: 0px;
+    font-size: 25px;
+}
+
+main .form form p{
+    font-size: 29px;
+    margin-left: -16px;
+}
+
+main .form form .submit-button{
+    margin-top: 40px;
+    background-color: #43D080;
+    color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: auto;
+    border: 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+main .form form .submit-button:hover{
+    background-color: #1aa857;
+}
+
+::-webkit-input-placeholder  { 
+color: #A5A5A5; 
+font-size: 25px;
+font-weight: 700;
+align-items: center;
+}
+
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.filled{
+    border: 3px solid #43D080;
+}
+
+.unfilled{
+    border: 3px solid #d04543;
+}
