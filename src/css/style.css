@@ -6,7 +6,7 @@ html {
 }
 
 body {
-    height: 100vh;
+    min-height: 100vh;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -42,13 +42,13 @@ main .form {
     justify-content: center;
     align-items: center;
     margin: 0px 100px 0px 15px;
+    padding: 10px 0px;
 }
 
 main .form form{
     display: flex;
     flex-direction: column;
     background-color: #fff;
-    height: 90%;
     width: 100%;
     padding: 40px 40px;
     border-radius: 15px;
@@ -92,7 +92,7 @@ main .form form .doubt-message{
 }
 
 main .form form p{
-    font-size: 29px;
+    font-size: 22px;
     margin-left: -16px;
 }
 
@@ -100,7 +100,7 @@ main .form form .submit-button{
     margin-top: 40px;
     background-color: #43D080;
     color: #fff;
-    padding: 30px;
+    padding: 25px;
     border-radius: 10px;
     font-size: 25px;
     font-weight: 700;
